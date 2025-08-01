@@ -90,7 +90,7 @@ For Hardware:
 
 ## Team Contributions
 - [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
+- Pavithra Deepu E: Worked on White page for 8 Hours
 - [Name 3]: [Specific contributions]
 
 ---
