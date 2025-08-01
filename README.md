@@ -1,25 +1,24 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# Chumma Counter - A AI powerd Bookmark 🎯
+# Chumma Counter: The World's Most Pointless Bookmark 📖🤖
 
 
 ## Basic Details
 ### Team Name: GP
-
 
 ### Team Members
 - Team Lead: Gokul P - Adishankara Institute of Engineering and Technology 
 - Member 2: Pavithra Deepu E - Adishankara Institute of Engineering and Technology
 
 ### Project Description
-[2-3 lines about what your project does]
+Why write down your page number like a 15th-century monk when you can summon the power of React, Firebase and an ESP32? This marvel of modern overengineering exists solely to show you the page number of a book where you could easily just use a piece of paper or fold the corner as a bookmark.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Remembering your page number is too basic. Bookmarks are boring, and folding pages is a crime. Clearly, what we need is a smart, Firebase-connected, ESP 32-powered solution.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+Slap an ESP32 into a breadboard, connect it to Firebase, build a Web app, and voilà 🎉 your page number is now in the cloud. Totally unnecessary, wildly overengineered, and somehow... beautiful.
 
 ## Technical Details
 ### Technologies/Components Used
@@ -34,7 +33,8 @@ For Hardware:
 - ESP 32
 - I2C OLED
 - [List specifications]
-- [List tools required]
+- Wirecutter
+- Wirestripper
 
 ### Implementation
 For Software: 
