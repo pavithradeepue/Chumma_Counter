@@ -89,9 +89,8 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- Pavithra Deepu E: Worked on White page for 8 Hours
-- [Name 3]: [Specific contributions]
+- Gokul P: Hardware I+ntegration, Frontend 
+- Pavithra Deepu E: Frontend, Decoration
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
