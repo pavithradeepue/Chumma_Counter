@@ -24,10 +24,11 @@
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- HTML
+- CSS
+- JavaScript
+- Firebase DB
+- Firebase Hosting
 
 For Hardware:
 - ESP 32
@@ -36,7 +37,7 @@ For Hardware:
 - [List tools required]
 
 ### Implementation
-For Software:
+For Software: 
 # Installation
 [commands]
 
