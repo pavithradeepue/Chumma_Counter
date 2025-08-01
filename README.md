@@ -39,10 +39,20 @@ For Hardware:
 ### Implementation
 For Software: 
 # Installation
-[commands]
+git clone https://github.com/pavithradeepue/Chumma_Counter
+cd Chumma_Counter
+firebase use --add
+
+# Cloud Deployement
+firebase init hosting
+firebase deploy
 
 # Run
-[commands]
+firebase emulators:start
+Use our website: https://chumma-counter.web.app/
+# Hardware
+Connect the circuit following the schematic.
+Program ESP 32 using microcode.cpp
 
 ### Project Documentation
 For Software:
