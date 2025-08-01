@@ -1,4 +1,5 @@
 #include <WiFi.h>
+#include <WiFiClientSecure.h>
 #include <HTTPClient.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
@@ -10,7 +11,7 @@ const char* password = "Redacted";
 
 // Firebase Settings (use your actual DB URL and token)
 const char* firebaseHost = "Redacted";  // End with .json
-const char* firebaseAuth = "Redacted";  // Optional if public rules are set
+const char* firebaseAuth = "Redacted";  
 
 // OLED settings
 #define SCREEN_WIDTH 128
@@ -18,12 +19,12 @@ const char* firebaseAuth = "Redacted";  // Optional if public rules are set
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 // Button pins
-const int incPin = 4;     // Increment
-const int decPin = 35;    // Decrement
-const int confPin = 34;   // Confirm
+const int incPin = 15;     // Increment
+const int decPin = 18;    // Decrement
+const int confPin = 4;   // Confirm
 
 // Counter state
-int counter = 0;
+int counter;
 bool confirmed = false;
 
 void connectWiFi() {
@@ -52,6 +53,33 @@ void connectWiFi() {
     while (true);  // Halt
   }
 }
+
+void fetchInitialCounter() {
+  if (WiFi.status() == WL_CONNECTED) {
+    HTTPClient http;
+
+    // If auth is required, append token
+    String url = String(firebaseHost);  // already ends with .json
+    // Uncomment if needed:
+    // url += "?auth=" + String(firebaseAuth);
+
+    http.begin(url);
+    int httpCode = http.GET();
+
+    if (httpCode == 200) {
+      String response = http.getString();
+      Serial.print("Fetched initial value: ");
+      Serial.println(response);
+      counter = response.toInt();  // if value is a raw integer
+    } else {
+      Serial.print("Failed to fetch initial value, HTTP code: ");
+      Serial.println(httpCode);
+    }
+
+    http.end();
+  }
+}
+
 
 void sendToFirebase(int count) {
   if (WiFi.status() == WL_CONNECTED) {
@@ -98,7 +126,9 @@ void setup() {
   display.display();
   delay(2000);
 
+
   connectWiFi();
+  fetchInitialCounter(); 
   updateDisplay();
 }
 
