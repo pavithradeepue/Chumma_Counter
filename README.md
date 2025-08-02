@@ -20,7 +20,7 @@ Remembering your page number is too basic. Bookmarks are boring, and folding pag
 ### The Solution (that nobody asked for)
 Slap an ESP32 into a breadboard, connect it to Firebase, build a Web app, and voilà 🎉 your page number is now in the cloud. Totally unnecessary, wildly overengineered, and somehow... beautiful.
 
-# Technical Details: Chumma Counter
+## Technical Details
 
 ## 💻 Software Components
 
@@ -75,15 +75,9 @@ https://chumma-counter.web.app/
 
 * **ESP32**: Microcontroller for processing inputs and communicating with Firebase.
 * **I2C OLED Display**: For visual feedback or displaying the current count on the hardware side.
-* **Wires**: For electrical connections between components.
-* **Wirecutter**:
-    * **Type:** Diagonal cutting pliers (side cutters).
-    * **Material:** Hardened steel jaws for durability.
-    * **Features:** Ergonomic handles for comfortable grip, precision tips for fine work.
-* **Wire Stripper**:
-    * **Type:** Automatic wire stripper or manual stripping pliers with multiple gauge holes.
-    * **Material:** Durable metal construction.
-    * **Features:** Adjustable stops for consistent strip lengths, comfortable handles, capable of stripping various wire gauges (e.g., 20-30 AWG for common electronics).
+* **Wires**
+* **Wirecutter**
+* **Wire Stripper**
 
 ### Implementation
 
