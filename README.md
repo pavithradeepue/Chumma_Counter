@@ -58,45 +58,52 @@ Program ESP 32 using microcode.cpp
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+<img width="1908" height="932" alt="Screenshot 2025-08-02 033414" src="https://github.com/user-attachments/assets/fb6f84a3-b0a5-4f86-b5f3-fff9241ae3cf" />
+Our website Hosted on firebase
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![HardWare_Demo_1](https://github.com/user-attachments/assets/a4636304-9fc8-40b8-8ef2-83f81c7f0f25)
+![HardWare_Demo_3](https://github.com/user-attachments/assets/8205322e-f313-4dee-b802-0b71c24e5873)
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+Our Hardware
+
+https://github.com/user-attachments/assets/8b93487f-c3c7-4b65-9932-696206be8f62
+
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+<img width="626" height="348" alt="image" src="https://github.com/user-attachments/assets/6bfc22bc-fcb9-4ed8-850c-3d92e5f609e4" />
+Our system Uses a ESP 32 take input from the user (It is a  counter with 3 inputs Increment,Decrement and Upload). When the upload is Pushed the value is send to the Firebase DB . Then Our front end displays it (In the front end there is no way to modify the value only to view it). The Front end is hosted on Firebase. 
 
 For Hardware:
 
 # Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
+<img width="680" height="420" alt="circuit" src="https://github.com/user-attachments/assets/5997430a-d354-4c48-9063-1e827dc03e47" />
+<img width="1076" height="750" alt="Schematic" src="https://github.com/user-attachments/assets/1daa2f7f-f925-4c03-b5a0-db365196a52d" />
 
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
+We use a ESP-32 with a I2C oled display and 3 push buttons (Increment,Decrement,Upload), The esp keeps a counter which gets initilialized with a value from DB and When pressed upload it uploads it to the DB
+
 
 # Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
 
-![Build](Add photos of build process here)
-*Explain the build steps*
+Early Hardware:
+![WhatsApp Image 2025-08-02 at 04 53 01_7b422a61](https://github.com/user-attachments/assets/1eff00e6-b033-48a2-becd-4ece27b0094d)
+![WhatsApp Image 2025-08-02 at 04 53 00_018faba6](https://github.com/user-attachments/assets/9605fd75-c145-4be0-a2ec-94972a29302b)
+Early Software:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1aba49c0-18d7-4b48-9882-357bc7703c72" />
+We started building our hardware first then Our Database. after getting both to be running perfectly we built the front end website 
 
-![Final](Add photo of final product here)
-*Explain the final build*
+Final Build:
+![HardWare_Demo_3](https://github.com/user-attachments/assets/1184edbc-5d28-4d20-9823-69b06cd5d140)
+<img width="1908" height="932" alt="Screenshot 2025-08-02 033414" src="https://github.com/user-attachments/assets/b1ffff49-b2c2-4f54-85e6-92ae1ce3364c" />
+
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+
+https://github.com/user-attachments/assets/237230d2-3fd6-4d26-861a-8fc400181682
+
 
 # Additional Demos
-[Add any extra demo materials/links]
+https://github.com/pavithradeepue/Chumma_Counter/tree/main/Gallery
 
 ## Team Contributions
 - Gokul P: Hardware I+ntegration, Frontend 
