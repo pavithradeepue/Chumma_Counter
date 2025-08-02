@@ -90,7 +90,10 @@ For Software:
 
 # Screenshots (Add at least 3)
 <img width="1908" height="932" alt="Screenshot 2025-08-02 033414" src="https://github.com/user-attachments/assets/fb6f84a3-b0a5-4f86-b5f3-fff9241ae3cf" />
+<img width="1280" height="625" alt="Screenshot 2025-08-02 033414 (Custom)" src="https://github.com/user-attachments/assets/a1f9c9e8-a789-45ef-a8db-c131193d1641" />
+
 Our website Hosted on firebase
+
 
 ![HardWare_Demo_1](https://github.com/user-attachments/assets/a4636304-9fc8-40b8-8ef2-83f81c7f0f25)
 ![HardWare_Demo_3](https://github.com/user-attachments/assets/8205322e-f313-4dee-b802-0b71c24e5873)
