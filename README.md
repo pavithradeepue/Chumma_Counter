@@ -91,6 +91,7 @@ For Software:
 # Screenshots (Add at least 3)
 <img width="1908" height="932" alt="Screenshot 2025-08-02 033414" src="https://github.com/user-attachments/assets/fb6f84a3-b0a5-4f86-b5f3-fff9241ae3cf" />
 <img width="1280" height="625" alt="Screenshot 2025-08-02 033414 (Custom)" src="https://github.com/user-attachments/assets/a1f9c9e8-a789-45ef-a8db-c131193d1641" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1f1b1e84-0d00-49c8-96e0-505ce5e91102" />
 
 Our website Hosted on firebase
 
