@@ -20,40 +20,77 @@ Remembering your page number is too basic. Bookmarks are boring, and folding pag
 ### The Solution (that nobody asked for)
 Slap an ESP32 into a breadboard, connect it to Firebase, build a Web app, and voilà 🎉 your page number is now in the cloud. Totally unnecessary, wildly overengineered, and somehow... beautiful.
 
-## Technical Details
-### Technologies/Components Used
-For Software:
-- HTML
-- CSS
-- JavaScript
-- Firebase DB
-- Firebase Hosting
+# Technical Details: Chumma Counter
 
-For Hardware:
-- ESP 32
-- I2C OLED
-- [List specifications]
-- Wirecutter
-- Wirestripper
+## 💻 Software Components
+
+### Technologies Used
+
+* **HTML**: Structure of the web application.
+* **CSS**: Styling and visual presentation of the user interface.
+* **JavaScript**: Client-side logic for dynamic content, animations, and Firebase integration.
+* **Firebase Realtime Database**: Cloud-hosted NoSQL database for storing and synchronizing the global page count.
+* **Firebase Hosting**: Web hosting service for deploying the web application.
+
+### Installation & Deployment
+
+To set up and deploy the Chumma Counter web application:
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/pavithradeepue/Chumma_Counter](https://github.com/pavithradeepue/Chumma_Counter)
+    cd Chumma_Counter
+    ```
+2.  **Add Firebase Project:**
+    ```bash
+    firebase use --add
+    ```
+    Follow the prompts to select and associate your Firebase project.
+3.  **Initialize Firebase Hosting:**
+    ```bash
+    firebase init hosting
+    ```
+    Configure the hosting settings as prompted (e.g., public directory, single-page app redirects).
+4.  **Deploy to Cloud:**
+    ```bash
+    firebase deploy
+    ```
+    This command builds and deploys your web application to Firebase Hosting.
+5.  **Run Locally (for development):**
+    ```bash
+    firebase emulators:start
+    ```
+    This will start local Firebase emulators for testing before deployment.
+
+### Access the Live Website
+
+You can access the deployed Chumma Counter website at:
+https://chumma-counter.web.app/
+
+---
+
+## 🔌 Hardware Components
+
+### Technologies/Components Used
+
+* **ESP32**: Microcontroller for processing inputs and communicating with Firebase.
+* **I2C OLED Display**: For visual feedback or displaying the current count on the hardware side.
+* **Wires**: For electrical connections between components.
+* **Wirecutter**:
+    * **Type:** Diagonal cutting pliers (side cutters).
+    * **Material:** Hardened steel jaws for durability.
+    * **Features:** Ergonomic handles for comfortable grip, precision tips for fine work.
+* **Wire Stripper**:
+    * **Type:** Automatic wire stripper or manual stripping pliers with multiple gauge holes.
+    * **Material:** Durable metal construction.
+    * **Features:** Adjustable stops for consistent strip lengths, comfortable handles, capable of stripping various wire gauges (e.g., 20-30 AWG for common electronics).
 
 ### Implementation
-For Software: 
-# Installation
-git clone https://github.com/pavithradeepue/Chumma_Counter
-cd Chumma_Counter
-firebase use --add
 
-# Cloud Deployement
-firebase init hosting
-firebase deploy
-
-# Run
-firebase emulators:start
-Use our website: https://chumma-counter.web.app/
-# Hardware
-Connect the circuit following the schematic.
-Program ESP 32 using microcode.cpp
-
+1.  **Connect the Circuit:**
+    Follow the provided schematic diagram to correctly connect the ESP32, I2C OLED, and any other relevant components using the wires. Ensure proper power supply and data lines (SDA/SCL for I2C).
+2.  **Program ESP32:**
+    Upload the `microcode.cpp` program to your ESP32 board using your preferred ESP32 development environment (e.g., Arduino IDE, PlatformIO). This code handles reading the "chumma" inputs and updating the Firebase Realtime Database.
 ### Project Documentation
 For Software:
 
